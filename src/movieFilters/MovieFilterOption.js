@@ -4,9 +4,8 @@ function MovieFilterOption(props) {
     const searchOptionsTextMap = {
         default: 'Select an option',
         name: 'Name',
-        category: 'Category',
+        region: 'Region',
         primary_release_year: 'Release Year',
-        with_genres: 'Genre',
         with_original_language: 'Original Language'
     };
     const sortOptionsTextMap = {
@@ -25,7 +24,7 @@ function MovieFilterOption(props) {
         'vote_average.desc': 'Vote Average(Descending)',
         'vote_count.asc': 'Vote Count(Ascending)',
         'vote_count.desc': 'Vote Count(Descending)',
-    }
+    };
     if (props.filterType === 'search') {
         return (
             <option value = {props.option}>{searchOptionsTextMap[props.option]}</option>
